@@ -13,6 +13,8 @@ This script takes some assumptions such as you are running your minecraft server
 2. Make sure you are the owner of the file  : (sudo) chown user:group mcbk.sh
 3. Give execute permission to the file      : sudo chmod u+x mcbk.sh
 4. manually run : bash mcbk.sh or setup a cronjob
+5. for cronjob type crontab -e and add the line : 0 0 * * * /path/to/script
+6. The cronjob will do a scheduled backup everyday at 12AM. You may change as per your requirement. If you do not know cronjob you may check cronjob guru or cron timings are done this way * * * * * : Each star denotes a specific time such as MIN HOUR DayOfMonth MonthOfYear Days(0-7 where 0 and 7=Sunday and 1-6=Monday to Saturday)
 
 ## Algorithm
 1. Script sends warning message from 30 seconds and countdowns from there
